@@ -1,1 +1,1 @@
-# event_manager
+Practice read and manipulate data from file
