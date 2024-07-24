@@ -19,6 +19,7 @@ civic_info.key = 'AIzaSyClRzDqDh5MsXwnCWi0kOiiBivP6JsSyBw'
 # If the phone number is more than 11 digits, assume that it is a bad number
 def clean_phone_num(homephone)
   homephone = homephone.to_s.gsub(/[[:punct:]\s]/, '')
+  # better line is homephone = homephone.to_s.gsub(/[/\D/ '') by removing all non-digit items
   if homephone.length == 10
     homephone
   elsif homephone.length == 11 && homephone[0] == '1'
